@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      var path = window.location.pathname.replace(/^\/portfolio/, '');
+      window.location.href = 'https://username.github.io' + path + window.location.search + window.location.hash;
+    </script>
+  </head>
+  <body>
+    <p>Redirecting... If you're not redirected, <a id="redirectLink" href="#">click here</a>.</p>
+    <script>
+      document.getElementById('redirectLink').href = window.location.href;
+    </script>
+  </body>
+</html>
